@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Левина](https://up.htmlacademy.ru/adaptive/10/user/122844).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Фатюк]
 
 ---
 
