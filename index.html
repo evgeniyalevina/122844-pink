@@ -4,9 +4,192 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page">
+    <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__panel">
+        <a class="main-nav__logo">
+          <img src="http://placehold.it/55x22" width="55" height="22" alt="Pink">
+        </a>
+        <button сlass="main-nav__toggle main-nav__toggle--open"> Открыть</button>
+      </div>
+      <ul class="main-nav__list main-nav__list--closed">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="index-page-content">
+      <section class="downloads">
+        <img src="http://placehold.it/320x460" width="320" height="460" alt="Hand-and-phone">
+        <div class="downloads__inner">
+          <a class="btn downloads__btn" href="">Скачать приложение</a>
+          <div class="downloads__markets">
+            <a class="download__market download__market--ios" href="">iOS</a>
+            <a class="download__market download__market--android" href="">Android</a>
+            <a class="download__market download__market--windows" href="">Windows</a>
+          </div>
+          <p class="downloads__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
 
+      <section class="advantages">
+        <div class="advantages__inner">
+          <div class="advantages__promo">
+            <p class="advantages__slogan-part">Устали от серости мегаполиса?</p>
+            <p class="advantages__slogan-part">Нам есть, что вам  предложить!</p>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h2 class="advantages__title">Поднимает настроение</h2>
+              <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="advantages__title">Меняет мир вокруг</h2>
+              <p class="advantages__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="advantages__title">Заводит новых друзей</h2>
+              <p class="advantages__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__img">
+            <img src="http://placehold.it/157x320" width="157" height="320" alt="Smile-screenshot">
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__inner">
+          <div class="reviews-slider">
+            <div class="reviews-slider__inner">
+              <article class="reviews-slide">
+                <h3 class="reviews-slide__author">Николай Петров</h3>
+                <p class="reviews-slide__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </article>
+              <article class="reviews-slide">
+                <h3 class="reviews-slide__author">Николай Петров</h3>
+                <p class="reviews-slide__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </article>
+              <article class="reviews-slide">
+                <h3 class="reviews-slide__author">Николай Петров</h3>
+                <p class="reviews-slide__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </article>
+            </div>
+            <div class="reviews-slider__switcher">
+              <button class="reviews-slider__switch reviews-slider__switch--active" type="button">1</button>
+              <button class="reviews-slider__switch" type="button">2</button>
+              <button class="reviews-slider__switch" type="button">3</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe-slider">
+          <table subscribe-table>
+            <thead>
+              <tr>
+                <th class="subscribe-table__header">
+                  <span class="subscribe-table__title">База</span>
+                  <span class="subscribe-table__price">1,99 USD</span>
+                </th>
+                <th class="subscribe-table__header">
+                    <span class="subscribe-table__title">Стандарт</span>
+                    <span class="subscribe-table__price">3,99 USD</span>
+                </th>
+                <th class="subscribe-table__header">
+                  <span class="subscribe-table__title">Анлим</span>
+                  <span class="subscribe-table__price">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Розовый фильтр</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Розовый фильтр</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Розовый фильтр</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Смайлики</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--no">Нет</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Смайлики</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Смайлики</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Комментарии</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--no">Нет</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Комментарии</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--no">Нет</span>
+                </td>
+                <td class="subscribe-table__feature">
+                  <span class="subscribe-table__feature-title">Комментарии</span>
+                  <span class="subscribe-table__feature-value subscribe-table__feature-value--yes">Да</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="subscribe-slider__switcher">
+            <button class="subscribe-slider__switcher" type="button">1</button>
+            <button class="subscribe-slider__switcher subscribe-slider__switcher--active" type="button">2</button>
+            <button class="subscribe-slider__switcher" type="button">3</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="index-page-footer">
+      <div class="contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__item-header">Звоните:</span>
+            <a class="contacts__item-value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__item-header">Пишите:</span>
+            <a class="contacts__item-value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__item-header">Приезжайте в гости:</span>
+            <address class="contacts__item-value">ул. Большая Конюшенная, 19/8</address>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-map">
+        <img src="http://placehold.it/320x200" width="320" height="200" alt="Map">
+      </div>
+    </footer>
   </body>
 </html>
