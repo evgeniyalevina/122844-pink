@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Пинк - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!--Header-->
@@ -18,28 +19,30 @@
               height="22"
               alt="Pink">
           </a>
-          <a сlass="main-nav__toggle main-nav__toggle--close">
-            Закрыть
+          <a сlass="main-nav__toggle main-nav__toggle--close" href="">
+            <svg class="icon icon--close">
+	          <use xlink:href="img/icon-menu-cross.svg#close">
+            </svg>
           </a>
         </div>
         <ul class="main-nav__list main-nav__list--closed">
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link" href="">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link" href="">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link" href="">
               Конкурс
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link" href="">
               Html Academy
             </a>
           </li>
@@ -57,17 +60,17 @@
           height="460"
           alt="Hand-and-phone">
         <div class="downloads__inner">
-          <a class="btn btn--round btn--transparent" href="">
+          <a class="btn btn--round btn--transparent" href="http://itunes.apple.com">
             Скачать приложение
           </a>
           <div class="downloads__markets">
-            <a class="downloads__link downloads__link--ios" href="">
+            <a class="downloads__link downloads__link--ios" href="http://itunes.apple.com" target="_blank">
               iOS
             </a>
-            <a class="downloads__link downloads__link--android" href="">
+            <a class="downloads__link downloads__link--android" href="https://play.google.com" target="_blank">
               Android
             </a>
-            <a class="downloads__link downloads__link--windows" href="">
+            <a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank">
               Windows
             </a>
           </div>
