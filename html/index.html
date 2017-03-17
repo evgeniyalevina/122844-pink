@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Пинк - Главная</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <!--Header-->
@@ -14,14 +14,14 @@
           <a class="logo">
             <img
               class="logo__img logo__img--crop"
-              src="http://placehold.it/55x22"
+              src="/img/logo-pink-white-mobile.svg"
               width="55"
               height="22"
               alt="Pink">
           </a>
           <a сlass="main-nav__toggle main-nav__toggle--close" href="">
             <svg class="icon icon--close">
-	          <use xlink:href="img/icons/icon-menu-cross.svg#close">
+	          <use xlink:href="/img/icons/icon-menu-cross.svg#close">
             </svg>
           </a>
         </div>
@@ -32,17 +32,17 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">
+            <a class="main-nav__link" href="/html/photo.html">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">
+            <a class="main-nav__link" href="/html/form.html">
               Конкурс
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">
+            <a class="main-nav__link" href="https://htmlacademy.ru">
               Html Academy
             </a>
           </li>
@@ -57,18 +57,20 @@
         <div class="jumbotron">
           <img
             class="jumbotron__img"
-            src="http://placehold.it/320x460"
+            src="/img/iphone-hand-mobile@1x.png"
             width="320"
             height="460"
             alt="Hand-and-phone">
         </div>
         <div class="downloads__inner">
-          <a class="btn btn--round btn--transparent" href="http://itunes.apple.com">
+          <a class="btn btn--transparent" href="http://itunes.apple.com">
             Скачать приложение
           </a>
           <div class="downloads__markets">
             <a class="downloads__link downloads__link--ios" href="http://itunes.apple.com" target="_blank">
-              iOS
+              <svg class="icon icon--ios">
+	            <use xlink:href="/img/icons/logo-apple.svg#ios"></use>
+              </svg>
             </a>
             <a class="downloads__link downloads__link--android" href="https://play.google.com" target="_blank">
               Android
@@ -127,7 +129,7 @@
         </ul>
         <img
           class="advantages__img"
-          src="http://placehold.it/157x320"
+          src="/img/iphone-screen-mobile@1x.png"
           width="157"
           height="320"
           alt="Smile-screenshot">
@@ -242,7 +244,7 @@
       </div>
       <!--Contacts-->
       <div class="contacts">
-        <p class="contacts__text">
+        <p class="text-block">
           Остались вопросы? Свяжитесь с нами!
         </p>
         <ul class="contacts__list">
@@ -274,7 +276,7 @@
       </div>
       <!--Map-->
       <div class="map">
-        <img src="http://placehold.it/320x200" width="320" height="200" alt="Map">
+        <img src="/img/bg-map-mobile@1x.png" width="320" height="200" alt="Map">
       </div>
     </main>
   </body>

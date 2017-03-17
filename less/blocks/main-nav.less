@@ -1,16 +1,18 @@
 .main-nav{
-  background-color: #283645;
+  background-color: @bg-header;
 }
 
 .main-nav__panel {
+  //background-color: rgba(40, 54, 69, 0.3)//
   border-bottom: 1px solid #000000;
 }
 
-.main-nav__list {
+/*
+ .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */
 
 .main-nav__item {
   border-top: 1px solid #485461;
@@ -18,11 +20,15 @@
 }
 
 .main-nav__link {
-  color: #ffffff;
-  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+ // text-decoration: none;
+  text-transform: uppercase;
+  color: @text-color-light;
 
   &:hover {
-    color: #d22856;
+    color: @brand-primary;
   }
 
   &:active {

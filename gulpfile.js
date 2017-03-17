@@ -9,11 +9,16 @@ var server = require("browser-sync").create();
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 
-var dest = "public"
+var dest = "public";
 
 gulp.task("copyhtml", function() {
   gulp.src("html/**/*.html")
-    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(dest));
+});
+
+gulp.task("copyimg", function() {
+  gulp.src("img/*.*")
+    .pipe(gulp.dest(dest));
 });
 
 gulp.task("style", function() {
@@ -25,11 +30,11 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
-    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(dest + "/css"))
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["style", "copyhtml", "copyimg"], function() {
   server.init({
     server: "./public/",
     notify: false,
@@ -40,7 +45,7 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("html/**/*.html"), ["copyhtml"];
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("/public/**/.*").on("change", server.reload);
 });
 
 /******************************

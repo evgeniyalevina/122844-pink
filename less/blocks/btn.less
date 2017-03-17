@@ -1,1 +1,30 @@
+.btn {
+  display: inline-block;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @text-color-light;
+  border: 3px solid @text-color-light;
 
+  &--square {
+    line-height: 30px;
+    background-color: @brand-success;
+    border-radius: none;
+
+
+    &:hover {
+      background-color: 1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255,255,255,0.3);
+      background-color: 1c9b5e;
+    }
+
+    &--transparent {
+      background-color: transparent;
+    }
+  }
+}
