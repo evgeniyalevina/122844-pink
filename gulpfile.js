@@ -16,8 +16,8 @@ gulp.task("copyhtml", function() {
     .pipe(gulp.dest(dest));
 });
 
-gulp.task("copyimg", function() {
-  gulp.src("img/*.*")
+gulp.task("copyassets", function() {
+  gulp.src("assets/**/*.*")
     .pipe(gulp.dest(dest));
 });
 
@@ -34,7 +34,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style", "copyhtml", "copyimg"], function() {
+gulp.task("serve", ["style", "copyhtml", "copyassets", "icons"], function() {
   server.init({
     server: "./public/",
     notify: false,
@@ -44,8 +44,8 @@ gulp.task("serve", ["style", "copyhtml", "copyimg"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("html/**/*.html"), ["copyhtml"];
-  gulp.watch("/public/**/.*").on("change", server.reload);
+  gulp.watch("html/**/*.html", ["copyhtml"]);
+  gulp.watch("public/**/*.*").on("change", server.reload);
 });
 
 /******************************
@@ -53,10 +53,10 @@ gulp.task("serve", ["style", "copyhtml", "copyimg"], function() {
  ******************************/
 gulp.task("icons", function () {
   return gulp
-    .src("img/icons/*.svg")
+    .src("icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: false
     }))
-    .pipe(gulp.dest(dest));
+    .pipe(gulp.dest(dest + "/img"));
 });

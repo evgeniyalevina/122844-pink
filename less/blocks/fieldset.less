@@ -1,1 +1,13 @@
+.fieldset {
+  border: none;
 
+  &__legend {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @brand-primary;
+  }
+}
+
+.fieldset:nth-child(2n) {
+  background-color: @bg-part;
+}
