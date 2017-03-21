@@ -1,0 +1,70 @@
+.btn {
+  display: inline-block;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @text-color-light;
+  background-color: transparent;
+  border: 3px solid @text-color-light;
+  border-radius: 30px;
+
+  &--download {
+    &:hover {
+      color: @brand-primary;
+      background-color: @bg-main;
+    }
+
+    &:active {
+      color: @brand-primary-opacity;
+      background-color: @bg-main;
+    }
+  }
+
+  &--upload {
+    color: @brand-primary;
+    border-color: @brand-primary;
+
+    &:hover {
+      color: @text-color-light;
+      background-color: @brand-primary;
+    }
+
+    &:active {
+      color: @brand-success-opacity;
+      background-color: @brand-primary;
+    }
+  }
+
+  &--cancel {
+    color: @disabled-color;
+    border-color: @disabled-color;
+
+    &:hover {
+      color: @disabled-color-hover;
+      border-color: @disabled-color-hover;
+    }
+
+    &:active {
+      color: @brand-success-opacity;
+      background-color: @disabled-color-hover;
+    }
+  }
+
+  &--square {
+    line-height: 30px;
+    background-color: @brand-success;
+    border: none;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: @brand-success-hover;
+    }
+
+    &:active {
+      color: @brand-success-opacity;
+      background-color: @brand-success-hover;
+    }
+  }
+}
