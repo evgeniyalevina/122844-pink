@@ -1,18 +1,19 @@
 var navMain = document.querySelector(".main-nav");
+var navList = document.querySelector(".main-nav__list");
 var navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove("main-nav--nojs");
+navList.classList.remove("main-nav__list--nojs");
 
 var navClick = function() {
-  if (navMain.classList.contains("main-menu--closed")) {
-    navMain.classList.remove("main-menu--closed");
-    navMain.classList.add("main-menu--opened");
+  if (navList.classList.contains("main-nav__list--closed")) {
+    navList.classList.remove("main-nav__list--closed");
+    navList.classList.add("main-nav__list--opened");
     navToggle.classList.remove('main-nav__toggle--lines');
     navToggle.classList.add('main-nav__toggle--cross');
 
   } else {
-    navMain.classList.add("main-menu--closed");
-    navMain.classList.remove("main-menu--opened");
+    navList.classList.add("main-nav__list--closed");
+    navList.classList.remove("main-nav__list--opened");
     navToggle.classList.add('main-nav__toggle--lines');
     navToggle.classList.remove('main-nav__toggle--cross');
 
