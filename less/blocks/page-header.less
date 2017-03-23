@@ -1,4 +1,92 @@
 .page-header {
-  //* Вспомогательная обводка //
-  border: 1px solid blue;
+  min-height: 237px;
+  background: @bg-header url("/img/bg-back-mobile@1x.jpg") no-repeat center;
+
+  &__panel {
+    //box-sizing: border-box;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #000000;
+
+    @media @desktop-width {
+      background-color: @header-opacity;
+    }
+  }
+
+   &__button {
+    position: relative;
+    float: right;
+    display: inline-block;
+    padding-right: 20px;
+    width: 70px;
+    height: inherit;
+    //background: lightblue;
+
+    @media @desktop-width {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    //иконка бургера
+    &--lines {
+      position: absolute;
+      top: 31px;
+      right: 20px;
+      width: 50px;
+      height: 4px;
+      background-color: @toggle-color;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: @toggle-color;
+      }
+
+      &::before {
+        top: -10px;
+        box-shadow: 0 1px 0 -1px @header-opacity;
+      }
+
+      &::after {
+        top: 10px;
+        box-shadow: 0 -1px 0 -1px @header-opacity;
+      }
+    }
+    //иконка крестика
+    &--cross {
+      position: absolute;
+      width: 32px;
+      height: 5px;
+      top: 30px;
+      right: 16px;
+      transform: rotate(45deg);
+      background-color: @toggle-color;
+
+      &::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 5px;
+      transform: rotate(90deg);
+      background-color: @toggle-color;
+      }
+    }
+  }
+
+  &__button:hover &__toggle,
+  &__button:hover &__toggle:before,
+  &__button:hover &__toggle:after {
+    background-color: @toggle-hover;
+  }
+
+  &__button:active &__toggle,
+  &__button:active &__toggle:before,
+  &__button:active &__toggle:after {
+    background-color: @toggle-down;
+  }
+
 }

@@ -1,18 +1,23 @@
 .icon {
 
+  &--logo-white {
+    display: block;
+    position: absolute;
+    top: 22px;
+  }
+
   &--close {
-    width: 23px;
-    height: 22px;
+    display: inline-block;
     fill: @text-color-light;
 
-    &:hover {
+    /*&:hover {
       fill: @brand-primary;
     }
 
     &:active {
       fill: @brand-primary;
       fill-opacity: 0.3;
-    }
+    } */
   }
 
   &--ios {
@@ -33,7 +38,6 @@
   &--yes {
     width: 31px;
     height: 21px;
-
   }
 
   &--no {
@@ -54,7 +58,6 @@
 
     &:active {
       fill: @brand-primary-opacity;
-
     }
   }
 
@@ -69,5 +72,4 @@
       fill: @disabled-color-hover;
     }
   }
-
 }

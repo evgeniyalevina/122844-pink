@@ -1,15 +1,57 @@
 .downloads {
+  height: 270px;
+  background-color: @bg-download;
   // Вспомогательная обводка
   border: 1px solid blue;
 
+  @media @tablet-width {
+    width: 340px;
+    z-index: 5;
+    margin-top: -350px;
+    background-color: transparent;
+  }
+
+
+
+  &__title {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
+      font-size: 40px;
+      line-height: normal;
+      font-weight: 300;
+      color: @text-color-light;
+    }
+
+    @media @desktop-width {
+      font-size: 50px;
+    }
+  }
+
   &__inner {
-    padding: 20px;
-    background-color: @bg-download;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 340px;
+    padding: 0 20px;
   }
 
   &__text {
     line-height: 24px;
     font-weight: 300;
+    text-align: center;
     color: @text-color-light;
+  }
+
+  &__markets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 37px;
+  }
+
+  &__link {
+
   }
 }
