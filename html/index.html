@@ -9,20 +9,9 @@
   <body>
     <!--Header-->
     <header class="page-header">
-        <div class="page-header__panel">
-          <a class="logo logo--header">
-            <svg class="icon icon--logo-white" width="74" height="23">
-	          <use xlink:href="img/icons.svg#logo-pink-white-mobile">
-            </svg>
-          </a>
-          <a class="page-header__button" href="" >
-            <div class="page-header__toggle page-header__toggle--lines"></div>
-          </a>
-        </div>
-      <nav class="main-nav main-nav--nojs main-nav--closed">
-        <!--
+      <nav class="main-nav">
         <div class="main-nav__panel">
-          <a class="logo logo--header">
+          <a class="main-nav__logo logo">
             <svg class="icon icon--logo-white" width="74" height="23">
 	          <use xlink:href="img/icons.svg#logo-pink-white-mobile">
             </svg>
@@ -31,10 +20,10 @@
             <div class="main-nav__toggle main-nav__toggle--lines"></div>
           </a>
         </div>
-        -->
-        <ul class="main-nav__list">
+        <!--Menu-->
+        <ul class="main-nav__list main-nav__list--nojs main-nav__list--closed">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link main-nav__link--active" href="index.html">
               Главная
             </a>
           </li>
@@ -56,15 +45,15 @@
         </ul>
        <!-- </div> -->
       </nav>
-       <!--???-Jumbotron-->
-        <div class="jumbotron">
-          <img
-            class="jumbotron__img"
-            src="/img/iphone-hand-mobile@1x.png"
-            width="320"
-            height="460"
-            alt="Hand-and-phone">
-        </div>
+      <!---Jumbotron-->
+      <div class="jumbotron">
+        <img
+          class="jumbotron__img"
+          src="/img/iphone-hand-mobile@1x.png"
+          width="320"
+          height="460"
+          alt="Hand-and-phone">
+      </div>
     </header>
     <!--Main-->
     <main class="page-content">
@@ -381,6 +370,8 @@
         </a>
       </div>
     </footer>
+
+
     <!--Script-->
     <script src="js/script.js" type="text/javascript"></script>
   </body>
